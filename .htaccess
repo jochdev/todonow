@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|app-assets|uploads)
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^(.*)$ ./index.php/$1 [L]
+
+
+#Adjust default time zone 
+SetEnv TZ America/Caracas
+setEnv APP_URL              "http://todonow.test/"
