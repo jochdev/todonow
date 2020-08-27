@@ -1,5 +1,5 @@
 <?php
-class Estado extends CI_Model {
+class Estado_model extends CI_Model {
    public function __construct(){
       parent::__construct();
    }
